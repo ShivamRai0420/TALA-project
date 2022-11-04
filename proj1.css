@@ -1,0 +1,143 @@
+@font-face{
+    font-family: attila;
+    src: url("./attila.ttf");
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:attila ;
+    color:#d5cdc4;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+#fullscreen-nav{
+    height: 100vh;
+    width: 100vw;
+    background-color: #eee;
+    transform: translateY(-100%);
+    z-index: 99;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+
+
+}
+#page1{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #232025;
+    overflow-y: auto;
+}
+#page2{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: #232025; */
+}
+#nav{
+    position:   relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    z-index: 200;
+    top: 5%;
+    padding: 0 45px;
+
+}
+#nav>h3{
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#navpart2{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#menu{
+    position: relative;
+    width: 35px;
+    height:22px ;
+    /* background-color: red; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+
+}
+#line1{
+    height:2px ;
+    width:100%;
+    background-color: #eee;
+
+}
+#line2{
+    /* position: absolute; */
+    margin-top: 25%;
+    height:2px ;
+    width:60%;
+    background-color: #eee;
+
+}
+#main-text{
+    position: absolute;
+    font-size:14vw;
+    top: 19vh;
+    left: 5%;
+}
+#main-text::after{
+    content: "R";
+    position: absolute;
+    font-size: 3.2vw;
+    border: 3px solid #d5cdc4;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -10%;
+    top: 5%;
+
+
+}
+#sub-text{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+#sub-text>h3{
+    font-size: 3vw;
+    font-weight: 100;
+}
+#sub-text>h3:nth-child(1){
+    text-align: right;
+    /* background-color: red; */
+}
+#sub2-text{
+    position: absolute;
+    right: 12%;
+    top: 60%;
+}
+#page1>img{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 90vh;
+    transform: scale(0.9);
+}
